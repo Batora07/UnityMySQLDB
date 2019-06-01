@@ -32,7 +32,7 @@ public class Registration : MonoBehaviour
 		}
 		else if(www.isNetworkError || www.isHttpError)
 		{
-				Debug.Log("Network Error : " + www.error);
+			Debug.Log("Network Error : " + www.error);
 		}
 		else
 		{
