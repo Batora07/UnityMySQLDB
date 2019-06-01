@@ -151,6 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319792a0260c7c94680f7d1cba67ccaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  registerButton: {fileID: 1931341866}
+  loginButton: {fileID: 445701347}
+  playButton: {fileID: 725245916}
   playerDisplay: {fileID: 1464499058}
 --- !u!4 &144447752
 Transform:

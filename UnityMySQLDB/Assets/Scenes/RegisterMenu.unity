@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 882493279}
   - component: {fileID: 882493278}
   - component: {fileID: 882493277}
+  - component: {fileID: 882493280}
   m_Layer: 5
   m_Name: NameInputField
   m_TagString: Untagged
@@ -511,6 +512,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882493275}
   m_CullTransparentMesh: 0
+--- !u!114 &882493280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882493275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 7b138b2cd040ed44e99f428721488af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 1353635854}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +701,7 @@ GameObject:
   - component: {fileID: 1353635856}
   - component: {fileID: 1353635855}
   - component: {fileID: 1353635854}
+  - component: {fileID: 1353635857}
   m_Layer: 5
   m_Name: PasswordInputField
   m_TagString: Untagged
@@ -757,8 +773,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1353635855}
   m_TextComponent: {fileID: 2106659516}
   m_Placeholder: {fileID: 1669492440}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -831,6 +847,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353635852}
   m_CullTransparentMesh: 0
+--- !u!114 &1353635857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353635852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 7b138b2cd040ed44e99f428721488af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextField: {fileID: 882493277}
 --- !u!1 &1391298082
 GameObject:
   m_ObjectHideFlags: 0
