@@ -8,11 +8,12 @@
 		exit();
 	}
 	
-	$username = $_POST["name"];
+	$username = mysqli_real_escape_string($con, $_POST["name"]);
+	$usernameClean = filter_var($username, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH);
 	$password = $_POST["password"];
 
 	// if name already exists in the db
-	$nameCheckQuery = "SELECT username, salt, hash, score FROM players WHERE username='" . $username . "';";
+	$nameCheckQuery = "SELECT username, salt, hash, score FROM players WHERE username='" . $usernameClean . "';";
 
 	$nameCheck = mysqli_query($con, $nameCheckQuery) or die("2: Name check query failed");  //error code #2 = name check query failed
 
