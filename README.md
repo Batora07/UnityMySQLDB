@@ -9,5 +9,7 @@ with a new table named 'players' with 5 rows : 'id', 'username', 'hash', 'salt' 
 Set the id table as Primary key and auto increment.
 set the username table as Unique
 
+Also define the default value of "score" row to 0
+
 ~~~~
 The php server code is also available in this repository.
